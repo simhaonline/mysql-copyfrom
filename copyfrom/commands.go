@@ -37,6 +37,8 @@ func copy(filtPath string ,database string,table string ,addr string ){
 		var f interface{}
 		b:= json.Unmarshal([]byte(jsonstring),f)
 		fmt.Println(b)
+		var sql string = buildsql()
+		insert(sql) //执行 insert
 	})
 
 }
@@ -58,4 +60,9 @@ func readLineJson(filePath string,f func(data string)){
 		}
 		f(string(a)) //CallBack 回调
 	}
+}
+
+func buildsql()(string){
+
+	return "";
 }
