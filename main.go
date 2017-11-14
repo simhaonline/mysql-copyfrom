@@ -1,1 +1,6 @@
-package mysql_copyfrom
+package main
+
+
+func main(){
+
+}
